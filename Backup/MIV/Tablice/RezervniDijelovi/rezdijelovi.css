@@ -1,0 +1,638 @@
+	html, body
+	{
+		height: 100%;
+	}
+	
+	body
+	{
+		margin: 0px;
+		padding: 0px;
+		background: #FFF;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 12pt;
+		font-weight: 300;
+		color: #000000;
+	}
+	
+	
+	h1, h2, h3
+	{
+		margin: 0;
+		padding: 0;
+		color: #8dc63f;
+	}
+	
+	p, ol, ul
+	{
+		margin-top: 0;
+	}
+	
+	ol, ul
+	{
+		padding: 30px;
+		list-style: none;
+	}
+	
+	p
+	{
+		line-height: 180%;
+	}
+	
+	strong
+	{
+		color: #8dc63f;
+	}
+	
+	a
+	{
+		color: #8dc63f;
+	}
+	
+	a:hover
+	{
+		text-decoration: none;
+	}
+	
+	.container
+	{
+		overflow: hidden;
+		margin: 0em auto;
+		width: 1200px;
+	}
+	
+/*********************************************************************************/
+/* Image Style                                                                   */
+/*********************************************************************************/
+
+	.image
+	{
+		display: inline-block;
+	}
+	
+	.image img
+	{
+		display: block;
+		width: 100%;
+	}
+	
+	.image-full
+	{
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
+	
+	.image-left
+	{
+		float: left;
+		margin: 0 2em 2em 0;
+	}
+	
+	.image-centered
+	{
+		display: block;
+		margin: 0 0 2em 0;
+	}
+	
+	.image-centered img
+	{
+		margin: 0 auto;
+		width: auto;
+	}
+
+
+		
+	
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header
+	{
+		position: relative;
+		padding: 5em 0em;
+	}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo
+	{
+		position: absolute;
+		top: 0.5em;
+		left: 0;
+	}
+	
+	#logo h1
+	{
+        margin: 0;
+		padding: 0;
+		color: #009966;
+	}
+	
+	#logo a
+	{
+		text-decoration: none;
+		color: #8dc63f;
+	}
+	
+	logo Login
+    {
+        position: absolute;
+        right: 300px;
+        text-align: left;
+        font-weight: bold;
+        font-size: medium;
+        top: 20px;
+    }
+
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+	#menu
+	{
+		position: absolute;
+		top: 6em;
+		right: 0;
+	}
+	
+	#menu ul
+	{
+		display: inline-block;
+	}
+	
+	#menu li
+	{
+		display: block;
+		float: left;
+		text-align: center;
+	}
+	
+    #menu li:before
+	{
+		content: "//";
+		padding: 1em 1.5em;
+		font-weight: 700;
+		color: rgba(0,0,0,.6);
+	}
+	
+	#menu li a, #menu li span
+	{
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 1em;
+		color: rgba(0,0,0,.4);
+	}
+	
+	#menu li:hover a, #menu li.active a, #menu li.active span
+	{
+		color: rgba(0,0,0,.6);
+	}
+	
+	#menu .current_page_item a
+	{
+		color: rgba(0,0,0,.8);
+	}
+	
+	#menu .icon
+	{
+	}
+	
+
+/*********************************************************************************/
+/* Page                                                                          */
+/*********************************************************************************/
+
+	#page
+	{
+		position: relative;
+		overflow: hidden;
+		padding: 5em 0em;
+	}
+
+/*********************************************************************************/
+/* Content                                                                       */
+/*********************************************************************************/
+
+	#content
+	{
+	}
+
+/*********************************************************************************/
+/* Sidebar                                                                       */
+/*********************************************************************************/
+
+	#sidebar
+	{
+	}
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	#footer
+	{
+	}
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+	#copyright
+	{
+		overflow: hidden;
+		padding: 5em 0em;
+		border-top: 1px solid rgba(0,0,0,0.1);
+	}
+	
+	#copyright p
+	{
+		letter-spacing: 0.20em;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 0.80em;
+		color: rgba(0,0,0,0.6);
+	}
+	
+	#copyright a
+	{
+		text-decoration: none;
+		color: rgba(0,0,0,1);
+	}
+
+/*********************************************************************************/
+/* Featured                                                                      */
+/*********************************************************************************/
+
+	#featured
+	{
+		overflow: hidden;
+		padding: 5em 0em;
+		border-top: 1px solid rgba(0,0,0,0.1);
+	}
+	
+	#featured .align-left
+	{
+		float: left;
+		width: 384px;
+		padding-top: 1em;
+		text-align: center;
+	}
+	
+	#featured .fa
+	{
+		font-size: 14em;
+		color: #8dc63f;
+	}
+
+	#featured .align-right
+	{
+		float: right;
+		width: 792px;
+		font-size: 1.4em;
+	}
+
+
+	.box
+	{
+		margin-bottom: 2em;
+		padding-bottom: 2em;
+		border-bottom: 1px solid rgba(0,0,0,.1);
+	}
+	
+	.box span
+	{
+		margin: 0;
+		padding: 1em 1em;
+		background: #01a58d;
+		display: block;
+		line-height: 3em;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 1.2em;
+		color: #FFF;
+	}
+
+/*********************************************************************************/
+/* Header kontakt                                                                */
+/*********************************************************************************/
+    #kontakt p
+    {
+        position: absolute;
+        right: 0em;
+        text-align: right;
+        font-weight: bold;
+        font-size: x-small;
+        top: 20px;
+    }
+    
+    #status
+    { position: absolute;
+      right: 5em;
+      padding-top: 0.5em;     
+    }
+
+    #crta
+    { color: #94948a;
+      width: auto;
+      border-top-style: solid;
+      border-top-color: #94948a;
+    }
+    
+    #naslov
+    {
+        position: absolute;
+        left: 2.2em;
+        bottom: 0.75em;
+        margin: 0;
+		padding: 0;
+		color: #01a58d;
+		font-size: xx-large;
+		font-weight: 700;
+    }
+    
+    .mGrid {   
+        position: relative;
+        bottom: 150px;
+        left: 420px;
+        width: 60%;   
+        background-color: #fff;   
+        margin: 5px 0 10px 0;   
+        border: solid 1px #525252;   
+        border-collapse:collapse;
+        text-align: center;
+    }  
+    
+    .mGrid td {   
+        padding: 2px;   
+        border: solid 1px #c1c1c1;   
+        color: #717171;   
+    }  
+
+    .mGrid th {   
+        padding: 4px 2px;   
+        color: #fff;   
+        background: #424242 url(grd_head.png) repeat-x top;   
+        border-left: solid 1px #525252;   
+        font-size: 0.9em;   
+    }  
+
+    .mGrid .alt { background: #fcfcfc url(grd_alt.png) repeat-x top; }  
+    .mGrid .pgr { background: #424242 url(grd_pgr.png) repeat-x top; }  
+    .mGrid .pgr table { margin: 5px 0; }  
+    
+    .mGrid .pgr td {   
+        border-width: 0;   
+        padding: 0 6px;   
+        border-left: solid 1px #666;   
+        font-weight: bold;   
+        color: #fff;   
+        line-height: 12px;   
+    }     
+    
+    .mGrid .pgr a { color: #666; text-decoration: none; }  
+    .mGrid .pgr a:hover { color: #000; text-decoration: none; }
+    
+/*********************************************************************************/
+/* Gumb                                                                          */
+/*********************************************************************************/
+        
+             
+    .myButton 
+    {
+        position: relative;
+        left: 740px;
+        bottom: 100px;
+        background-position: 0% 0%;
+        background-image: linear-gradient(to bottom, #dbdbdb, #80806e);
+        -webkit-border-radius: 10;
+        -moz-border-radius: 10;
+        border-radius: 10px;
+        font-family: Arial;
+        color: #ffffff;
+        font-size: 15px;
+        padding: 5px 20px 10px 20px;
+        border: solid #e0e0e0 1px;
+        text-decoration: none;
+        text-align: center;
+        background-color: #dbdbdb;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        height: 42px;
+        width: 160px;
+    }
+
+    .myButton:hover 
+    {
+        background: #194e6e;
+        background-image: -webkit-linear-gradient(top, #b0b8bd, #a5a7a8);
+        background-image: -moz-linear-gradient(top, #b0b8bd, #a5a7a8);
+        background-image: -ms-linear-gradient(top, #b0b8bd, #a5a7a8);
+        background-image: -o-linear-gradient(top, #b0b8bd, #a5a7a8);
+        background-image: linear-gradient(to bottom, #b0b8bd, #a5a7a8);
+        text-decoration: none;
+    }
+    
+    .Prelazak
+    {  
+        position: absolute;
+        right: 50px;
+        bottom: 50px;
+    }
+    
+    .PNaslovi
+    {
+        position: relative;
+        left: 350px;
+        bottom: 150px;
+        font-size: xx-large;
+        font-family: Times New Roman;
+        text-transform: uppercase;
+        color: #01a58d;
+    }
+    
+    .style2
+    {
+        position: relative;
+        bottom: 250px; 
+    }
+        
+    
+/*********************************************************************************/
+/* Menu                                                                        */
+/*********************************************************************************/  
+  
+  
+        #cssmenu {
+          padding: 0;
+          margin: 0;
+          border: 0;
+        }
+        #cssmenu ul,
+        li {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+        #cssmenu ul {
+          position: relative;
+          z-index: 597;
+          float: left;
+        }
+        #cssmenu ul li {
+          float: left;
+          min-height: 1px;
+          line-height: 1em;
+          vertical-align: middle;
+        }
+        #cssmenu ul li.hover,
+        #cssmenu ul li:hover {
+          position: relative;
+          z-index: 599;
+          cursor: default;
+        }
+        #cssmenu ul ul {
+          visibility: hidden;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          z-index: 598;
+          width: 100%;
+        }
+        #cssmenu ul ul li {
+          float: none;
+        }
+        #cssmenu ul li:hover > ul {
+          visibility: visible;
+        }
+        #cssmenu ul ul {
+          top: 0;
+          left: 100%;
+        }
+        #cssmenu ul li {
+          float: none;
+        }
+                
+       
+        #cssmenu span,
+        #cssmenu a {
+          display: inline-block;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 12px;
+          text-decoration: none;
+        }
+        #cssmenu {
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px;
+          border-radius: 5px;
+          -moz-background-clip: padding;
+          -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+          -moz-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.15);
+          -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.15);
+          font-weight: 600;
+          width: 200px;
+        }
+        #cssmenu:after,
+        #cssmenu ul:after {
+          content: '';
+          display: block;
+          clear: both;
+        }
+        #cssmenu > ul > li:first-child {
+          -moz-border-radius: 5px 5px 0 0;
+          -webkit-border-radius: 5px 5px 0 0;
+          border-radius: 5px 5px 0 0;
+          -moz-background-clip: padding;
+          -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+        }
+        #cssmenu > ul > li:last-child {
+          -moz-border-radius: 0 0 5px 5px;
+          -webkit-border-radius: 0 0 5px 5px;
+          border-radius: 0 0 5px 5px;
+          -moz-background-clip: padding;
+          -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+        }
+        #cssmenu > ul > li ul ul li:first-child {
+          -moz-border-radius: 0 5px 0 0;
+          -webkit-border-radius: 0 5px 0 0;
+          border-radius: 0 5px 0 0;
+          -moz-background-clip: padding;
+          -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+        }
+        #cssmenu > ul > li ul ul li:last-child {
+          -moz-border-radius: 0 0 5px 0;
+          -webkit-border-radius: 0 0 5px 0;
+          border-radius: 0 0 5px 0;
+          -moz-background-clip: padding;
+          -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+        }
+        #cssmenu ul,
+        #cssmenu li {
+          width: 100%;
+        }
+        #cssmenu li {
+          background: #c0bebf url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA0CAMAAAB8fKKlAAAAmVBMVEXy7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7erx7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7eoO3g4TAAAAMnRSTlP8+fbz7+vn497Z1M/KxL+5s66oopuVj4mDfHZwamRdV1FMRkA7NTArJiEcGBQQDAkGA02z+X0AAABLSURBVHheDcGDEQMBAACwvFnbtrv/cO3F949AKBJLpDK5QqlSa2hqaevo6ukbGBoZm5iamVtYWlnb2NrZOzg6Obu4url7eHp5+/wAxikFLnlTZcYAAAAASUVORK5CYII=) repeat-x;
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f2edea), color-stop(1, #c0bebf));
+          background-image: -webkit-linear-gradient(top, #f2edea, #c0bebf);
+          background-image: -moz-linear-gradient(top, #f2edea, #c0bebf);
+          background-image: -ms-linear-gradient(top, #f2edea, #c0bebf);
+          background-image: -o-linear-gradient(top, #f2edea, #c0bebf);
+          background-image: linear-gradient(#f2edea, #c0bebf);
+        }
+        #cssmenu li:hover,
+        #cssmenu li.active {
+          background: #606a76 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA0CAMAAAB8fKKlAAAAmVBMVEVKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmL///9KVmL3Z0MtAAAAMnRSTlP8+fby7+vm4t3Y087Iw723sauln5mTjIaAeXNsZmBaVE5IQjw3MSwnIh0ZFBANCQYDAAm6nKYAAABLSURBVHheDcGDEQMBAACwvFnbtrv/cO3F949AKBJLpDK5QqlSa2hqaevo6ukbGBoZm5iamVtYWlnb2NrZOzg6Obu4url7eHp5+/wAxikFLnlTZcYAAAAASUVORK5CYII=) repeat-x;
+          -moz-box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.15);
+          -webkit-box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.15);
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4a5662), color-stop(1, #606a76));
+          background-image: -webkit-linear-gradient(top, #4a5662, #606a76);
+          background-image: -moz-linear-gradient(top, #4a5662, #606a76);
+          background-image: -ms-linear-gradient(top, #4a5662, #606a76);
+          background-image: -o-linear-gradient(top, #4a5662, #606a76);
+          background-image: linear-gradient(#4a5662, #606a76);
+        }
+        #cssmenu li:hover > a,
+        #cssmenu li.active > a {
+          color: #FFF;
+        }
+        #cssmenu a {
+          color: #666666;
+          line-height: 160%;
+          padding: 16px 8px 16px 28px;
+          width: 164px;
+        }
+        #cssmenu ul ul {
+          -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+          -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+          width: 200px;
+        }
+        #cssmenu ul ul li {
+          background: #606a76;
+          border-bottom: 1px solid #59636F;
+          -moz-box-shadow: inset 0 1px 0 #66707c;
+          -webkit-box-shadow: inset 0 1px 0 #66707c;
+          box-shadow: inset 0 1px 0 #66707c;
+        }
+        #cssmenu ul ul li:hover {
+          background: #4a5662;
+        }
+        #cssmenu ul ul li a {
+          color: #FFF;
+        }
+        #cssmenu ul ul a,
+        #cssmenu ul ul a span {
+          font-size: 12px;
+        }

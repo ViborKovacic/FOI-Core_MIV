@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Glavna.master.cs" Inherits="MIV.Glavna" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="default.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style2
+        {
+            color: #0000CC;
+        }
+        .style3
+        {}
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div id="header" class="container">
+	        <div id="logo">
+		        <h1><img src="http://localhost:49320/Pocetna/images/miv-logo-1.jpg" /><br />
+                </h1>
+	        </div>
+            <div id="naslov">e-Nabava</div>
+	        <div id="menu">
+		        <ul>
+			        <li class="active"><a href="http://www.miv.hr/default.asp?Lang=hr&LanguageID=-1" accesskey="1" title="">SLUŽBENA STRANICA</a></li>
+			        <li><a href="http://localhost:49320/Pocetna/Pocetna.aspx">ARTIKLI</a></li>
+                    <li><a href="#">PRIJAVA ZA NATJECAJ</a></li>
+			        <li><a href="http://localhost:49320/Prijava/Login.aspx">PRIJAVA</a></li>
+                    <li><a href="http://localhost:49320/Registracija/Registracija.aspx">REGISTRACIJA</a></li>
+		        </ul>
+	        </div>
+            <div id="kontakt">
+        <p>Fabijanska 33, 42 000 Varaždin, Croatia<br />
+           tel. : + 385 42 404 100; Gospodarska bb<br />
+           tel. : + 385 42 290 100; Fabijanska 33<br />
+           e- mail: miv@miv.hr; sales@miv.hr; prodaja@miv.hr<br />
+        </p>
+        </div>
+        </div>
+
+        <div id="status"> Trenutni korisnik: <asp:Label ID="Label1" runat="server" Text="Label" CssClass="style2"></asp:Label>&nbsp;&nbsp;
+            <asp:Button ID="Odjava" runat="server" CssClass="style3" Height="16px" 
+                onclick="Odjava_Click" Text="Odjava" />
+        </div>
+        <div id="crta"> </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        
+        
+        </asp:ContentPlaceHolder>
+        <div id="Div1" class="container">
+	        <div id="copyright" class="container">
+                <p>
+                    MIV d.d.
+                    FABIJANSKA 33
+                    HR-42000 Varaždin
+                    HRVATSKA
+                    <br />
+                    <img src="http://localhost:49320/Pocetna/images/slogan.jpg" />
+                </p>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
